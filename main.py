@@ -36,7 +36,7 @@ def create_app():
     
     @app.route('/version', methods=['GET'], strict_slashes=False)
     def version():
-        return Response(json.dumps({'success': '1.0.0'}), status=200, mimetype='application/json')
+        return Response(json.dumps({'Success': '1'}), status=200, mimetype='application/json')
     
     @app.after_request
     def after_request(response):
